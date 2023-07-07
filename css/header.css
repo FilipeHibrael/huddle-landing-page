@@ -1,0 +1,22 @@
+#bg {
+    background: hsl(193, 100%, 96%) url(../images/bg-hero-desktop.svg) no-repeat;
+    background-size: cover;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+#botao-header {
+    background-color: #ffffff;
+    color: hsl(192, 100%, 9%);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+} 
+
+#botao-header:hover {
+    color: hsl(0, 0%, 70%);
+}
