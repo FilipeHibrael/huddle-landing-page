@@ -82,3 +82,44 @@ footer {
     width: max-content;
     grid-column: 3;
 }
+
+@media (max-width: 800px) {
+    #footer-conteudo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #footer-redes {
+        grid-column: 2;
+    }
+
+    #footer-copy {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: end;
+    }
+}
+
+@media (max-width: 600px) {
+    #footer-conteudo {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    #footer-conteudo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #footer-redes {
+        align-self: center;
+    }
+
+    #footer-copy {
+        align-self: center;
+    }
+}

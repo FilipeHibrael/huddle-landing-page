@@ -29,3 +29,47 @@
     color: hsl(208, 11%, 55%);
     max-width: 50ch;
 }
+
+@media (max-width: 800px) {
+    .card {
+        gap: 20px;
+        padding: 20px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        grid-template-columns: 1fr;
+        padding: 60px;
+    }
+
+    .card-conteudo {
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .card-conteudo h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #cards {
+        margin-bottom: 60px;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+
+    .card-conteudo h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .card-conteudo p {
+        font-size: 1rem;
+    }
+}

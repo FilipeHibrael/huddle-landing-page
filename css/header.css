@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     padding-top: 60px;
     padding-bottom: 80px;
 }
@@ -15,8 +16,32 @@
     background-color: #ffffff;
     color: hsl(192, 100%, 9%);
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
 } 
 
 #botao-header:hover {
     color: hsl(0, 0%, 70%);
+}
+
+@media (max-width: 800px) {
+    #bg {
+        background: hsl(193, 100%, 96%) url(../images/bg-hero-mobile.svg) no-repeat;
+        background-size: cover;
+    }
+
+    #header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #botao-header {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    #header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }

@@ -27,3 +27,33 @@
     max-width: 50ch;
     margin-bottom: 32px;
 }
+
+@media (max-width: 800px) {
+    #introducao {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    #introducao-conteudo {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    #introducao {
+        gap: 20px;
+        padding-bottom: 40px;
+        margin-bottom: 60px;
+    }
+
+    #introducao-conteudo h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    #introducao-conteudo p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
